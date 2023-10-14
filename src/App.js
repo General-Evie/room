@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Container />
-      <div class="attribution">
+      <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Evie Dickman</a>.
       </div>
