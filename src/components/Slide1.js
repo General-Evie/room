@@ -1,5 +1,6 @@
 import React from 'react'
 import hero1 from './images/desktop-image-hero-1.jpg'
+import { ArrowIcon } from './svgs/ArrowSvg'
 
 function Slide1() {
     return (
@@ -12,7 +13,7 @@ function Slide1() {
                     Our experts combine form and function in bringing your vision to life. Create a room in your
                     own style with our collection and make your property a reflection of you and what you love.
                 </p>
-                <button>Shop now</button>
+                <button>Shop now<div className='fill'><ArrowIcon /></div></button>
             </div>
         </div>
     )

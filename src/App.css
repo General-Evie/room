@@ -10,17 +10,113 @@ body {
   align-items: center;
   font-family: 'League Spartan';
   font-weight: 500;
+  max-width: 1440px;
+  overflow: hidden;
+  user-select: none;
 }
 
-img{
+img {
   background-repeat: no-repeat;
+  
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border: none;
+  background-color: transparent;
+  font-family: 'League Spartan';
+  text-transform: uppercase;
+  letter-spacing: 1ch;
+  color: black;
+}
+
+.fill{
+  fill: red;
+}
+
+button:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 63%);
+}
+
+
+ul {
+  display: inline-flex;
+  gap: 2rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+li::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: white;
+  height: .2em;
+  width: 1.5rem;
+  bottom: -10px;
+  transition: .3s;
+}
+
+li:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.nav {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.room {
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.carousel {
+  position: relative;
+}
+
+.angles {
+  position: absolute;
+  display: inline-flex;
+  margin-left: 52.5rem;
+  top: 28.45rem;
+}
+
+.angle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
+  width: 5rem;
+}
+
+.angle:hover {
+  background-color: hsl(0, 0%, 63%);
 }
 
 .slide {
-  padding: 4rem;
+  padding: 3rem;
 }
 
-.slide1 {
+.slide1,
+.slide2,
+.slide3 {
   display: flex;
   justify-content: center;
   align-items: center;
